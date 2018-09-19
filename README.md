@@ -1,9 +1,11 @@
-# creator_wechat_rank_demo
+微信小游戏排行榜demo 使用微信自带api
+
 使用方式
+
 首先加载这个排行榜的节点并设置成常驻节点
 
-js可getComponent调用
-this.wxRankListNode.getComponent("wxRankList").loadLevelOpenRank() //显示关卡进度排行
+```js可getComponent调用 
+this.wxRankListNode.getComponent("wxRankList").loadLevelOpenRank() //显示关卡进度排行 
 this.wxRankListNode.getComponent("wxRankList").onClose() //隐藏排行榜
 
 ts可import后直接用instance方法调用
