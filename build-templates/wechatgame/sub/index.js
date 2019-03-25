@@ -36,7 +36,7 @@ const dataSorter = (gameDatas, field = Consts.OpenDataKeys.LevelKey) => {
 	let newData = data.sort((a, b) => {
 		let va = a.KVDataList[0] ? a.KVDataList[0].value - 0 : 0
 		let vb = b.KVDataList[0] ? b.KVDataList[0].value - 0 : 0
-		return va < vb;
+		return vb - va;
 
 		// const kvDataA = a.KVDataList.find(kvData => kvData.key === field);
 		// const kvDataB = b.KVDataList.find(kvData => kvData.key === field);
